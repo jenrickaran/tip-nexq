@@ -45,11 +45,11 @@ $ticketNo = $currentServing['ticket_no'] ?? 'No Ticket';
         <div class="ticket-info text-white flex flex-col justify-center items-center gap-4">
             <h2 class="text-4xl font-semibold">Hello!</h2>
 
-            <div class="flex flex-col justify-center items-center">
+            <div class="w-full flex flex-col justify-center items-center">
                 <h3 class="text-[#fed201]">
                     Your Queue Number
                 </h3>
-                <div class="border-3 border-[#fed201] flex flex-col justify-center items-center p-5 rounded-3xl bg-zinc-900/40">
+                <div class="w-full border-3 border-[#fed201] flex flex-col justify-center items-center p-5 rounded-3xl bg-zinc-900/40">
                     <h1 class="text-[200px] font-bold">
                         <?php echo htmlspecialchars($ticket['ticket_no']); ?>
                     </h1>
@@ -97,6 +97,22 @@ $ticketNo = $currentServing['ticket_no'] ?? 'No Ticket';
                         ?>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="flex mt-10 gap-4">
+            <svg fill="#ffffff" width="50px" height="50px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>notice1</title>
+                <path d="M15.5 3c-7.456 0-13.5 6.044-13.5 13.5s6.044 13.5 13.5 13.5 13.5-6.044 13.5-13.5-6.044-13.5-13.5-13.5zM15.5 27c-5.799 0-10.5-4.701-10.5-10.5s4.701-10.5 10.5-10.5 10.5 4.701 10.5 10.5-4.701 10.5-10.5 10.5zM15.5 10c-0.828 0-1.5 0.671-1.5 1.5v5.062c0 0.828 0.672 1.5 1.5 1.5s1.5-0.672 1.5-1.5v-5.062c0-0.829-0.672-1.5-1.5-1.5zM15.5 20c-0.828 0-1.5 0.672-1.5 1.5s0.672 1.5 1.5 1.5 1.5-0.672 1.5-1.5-0.672-1.5-1.5-1.5z"></path>
+            </svg>
+
+            <div class="text-white">
+                <h1>
+                    Please keep this page open.
+                </h1>
+                <h1>
+                    You will be notified when it's almost your turn.
+                </h1>
             </div>
         </div>
     </main>
