@@ -27,7 +27,7 @@ $ticketNo = $currentServing['ticket_no'] ?? 'No Ticket';
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#0a0a0a] flex flex-col min-h-screen gap-10">
+<body class="bg-zinc-900 flex flex-col min-h-screen gap-10">
     <header class="flex flex-col justify-center items-center lg:justify-start lg:items-stretch lg:flex-row lg:gap-5 lg:pt-8 lg:px-8 pt-3">
         <img src="public/png/tip-logo.png" alt="Tip Logo" class="lg:size-24 size-[90px]">
 

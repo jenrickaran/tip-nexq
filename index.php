@@ -1,6 +1,6 @@
 <?php include 'layout/head.php'; ?>
 
-<body class="bg-[#0a0a0a] flex flex-col min-h-screen gap-10 md:gap-0">
+<body class="bg-zinc-900 flex flex-col min-h-screen gap-10 md:gap-0">
     <?php include 'layout/header.php'; ?>
 
     <main class="flex flex-col flex-1 items-center justify-center xl:px-4 px-8 mx-auto max-w-[1440px] h-full xl:my-0">
