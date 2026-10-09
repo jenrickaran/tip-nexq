@@ -150,7 +150,7 @@ $ticketNo = $currentServing['ticket_no'] ?? 'No Ticket';
                         <h1 class="text-2xl">NOW SERVING</h1>
                     </div>
                     <div class="text-9xl font-bold text-[#fed201]">
-                        <?php echo htmlspecialchars($ticketNo ?? 'No Ticket'); ?>
+                        <?php echo htmlspecialchars($ticketNo ?? '0'); ?>
                     </div>
                 </div>
 
