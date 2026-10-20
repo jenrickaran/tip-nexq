@@ -27,7 +27,8 @@ class Email
         $stmt->execute();
         $peopleAhead = $stmt->fetchColumn();
         $waitingMinutes = $peopleAhead * 4;
-        $appointmentTime = date('Y-m-d h:i A', strtotime("+$waitingMinutes Minutes"));
+        //$appointmentTime = date('Y-m-d h:i A', strtotime("+$waitingMinutes Minutes"));
+        $appointmentTime = date('Y-m-d H:i:s', strtotime("+$waitingMinutes minutes"));
 
         //inserting it into database
         $sqlInsert = "INSERT INTO email (email, ticket_no, appointment_time) VALUES (:email, :ticket_no, :appointment_time)";

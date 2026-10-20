@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+require_once 'config/dbConfig.php';
 require_once 'app/models/serving.php';
 
 $ticket = $_SESSION['ticket_info'] ?? null;
@@ -10,10 +11,32 @@ if (!$ticket) {
     exit;
 }
 
+// Use the ticket number stored in the session
+$ticketNumber = $ticket['ticket_no'] ?? null;
+
+if ($ticketNumber !== null) {
+    $sql = "SELECT ticket_no, appointment_time
+            FROM email
+            WHERE ticket_no = :ticket_no
+            ORDER BY timestamp DESC
+            LIMIT 1";
+
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([':ticket_no' => $ticketNumber]);
+
+    $latestTicket = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($latestTicket && !empty($latestTicket['appointment_time'])) {
+        $ticket['appointment_time'] = $latestTicket['appointment_time'];
+    }
+}
+
 $serving = new Serving($conn);
 $currentServing = $serving->getAllServings();
 $ticketNo = $currentServing['ticket_no'] ?? 'No Ticket';
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
