@@ -1,6 +1,6 @@
 <footer class="md:flex md:justify-between bg-[#fed201] px-8 md:pt-3 md:pb-2">
     <div class="flex gap-1 md:gap-5 md:flex-row flex-col justify-center items-center">
-        <img src="public/png/tip-logo.png" alt="Tip Logo" class="size-24">
+        <img src="public/png/new-tip-logo.png" alt="Tip Logo" class="size-24">
 
         <div class="flex flex-col justify-center font-semibold">
             <h2 class="text-center md:text-start">

@@ -22,7 +22,7 @@ $ticketNo = $currentServing['ticket_no'] ?? 'No Ticket';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NexQ - Ticket</title>
-    <link rel="icon" href="public/png/tip-logo.png" type="image/png">
+    <link rel="icon" href="public/png/new-tip-logo.png" type="image/png">
     <link rel="stylesheet" href="css/font-family.css">
     <link rel="stylesheet" href="css/body.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -30,7 +30,7 @@ $ticketNo = $currentServing['ticket_no'] ?? 'No Ticket';
 
 <body class="bg-zinc-900 flex flex-col min-h-screen gap-10">
     <header class="flex flex-col justify-center items-center lg:justify-start lg:items-stretch lg:flex-row lg:gap-5 lg:pt-8 lg:px-8 pt-3">
-        <img src="public/png/tip-logo.png" alt="Tip Logo" class="lg:size-24 size-[90px]">
+        <img src="public/png/new-tip-logo.png" alt="Tip Logo" class="lg:size-24 size-[90px]">
 
         <div class="flex flex-col justify-center lg:justify-start lg:items-stretch items-center gap-2 lg:gap-0">
             <h1 class="text-white text-5xl font-semibold">Nex<span class="text-[#fdd201]">Q</span></h1>
@@ -211,7 +211,7 @@ $ticketNo = $currentServing['ticket_no'] ?? 'No Ticket';
 
     <footer class="md:flex md:justify-between bg-[#fed201] px-8 md:pt-3 md:pb-2">
         <div class="flex gap-1 md:gap-5 md:flex-row flex-col justify-center items-center">
-            <img src="public/png/tip-logo.png" alt="Tip Logo" class="size-24">
+            <img src="public/png/new-tip-logo.png" alt="Tip Logo" class="size-24">
 
             <div class="flex flex-col justify-center font-semibold">
                 <h2 class="text-center md:text-start">
